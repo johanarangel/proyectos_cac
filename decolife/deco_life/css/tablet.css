@@ -1,0 +1,108 @@
+/* Navbar */
+
+.logo{
+    height: 40px;
+    width: 40px;
+}
+.nav{
+    height: 60px;
+}
+li > a{
+    font-size: 1.2rem;
+}
+.titulo{
+    font-size: 4.5rem;
+}
+
+/* Fin Navbar */
+
+/* Categorias */
+
+.s2{
+    flex-wrap: wrap;
+}
+
+/* Fin Categorias */
+
+/* Inicio */
+
+.titulo-ini{
+    font-size: 2.5rem;
+}
+
+/* Fin Inicio */
+
+/* Mas Vendidos */
+.s3{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#especial .info-prod > p:nth-child(3), 
+#especial-2 .info-prod > p:nth-child(3){
+    visibility: visible;
+}
+.grid-container{
+    row-gap: 1.2rem;
+}
+.grid-items{
+    flex-grow: 1;
+    width: 45%;
+    height: 20%;
+}
+.info-prod > p,
+#especial .info-prod > p,
+#especial-2 .info-prod > p{
+    font-size: 1.4rem;
+}
+#especial .info-prod > p:nth-child(3), 
+#especial-2 .info-prod > p:nth-child(3){
+    font-size: 1.2rem;
+}
+/* Fin Vendidos */
+
+/* Contacto */
+
+.s5{
+    flex-direction: column;
+    align-items: center;
+    min-height: 100rem;
+}
+#contact-form{
+    width: 80%;
+    justify-content: space-evenly;
+    position: relative;
+}
+textarea{
+    max-height: 200px;
+}
+.sidebar{
+    width: 80%;
+}
+.sidebar > iframe{
+    height: 80%;
+}
+.sidebar > h1{
+    margin: 0.5rem
+}
+
+/* Fin Contacto */
+
+/* Footer */
+
+.icons-footer{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 5px 5px 0;
+}
+.icons-footer > li > a{
+    font-size: 20px;
+}
+.footer-content{
+    flex-wrap: wrap;
+}
+.items_footer{
+    flex-grow: 1;
+    width: 45%;
+}
+
+/* Fin footer */

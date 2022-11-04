@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/large.css" media="screen and (max-width: 1150px)"/>
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (max-width: 950px)"/>
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 650px)"/>
+    <title>Decolife</title>
+    <link rel="shortcut icon" href="src/favicon.ico.png">
+    <meta name="keywords" content="muebles, mueble, mobiliario, cocina, cocinas, diseño, interior, interiores, decoración, diseño a medida, fabricante">
+</head>
+<body>
+    <header>
+        
+       <nav class="nav">
+            <figure>
+                <img class="logo" src="src/favicon.ico.png " alt="Logo de la empresa ">
+            </figure>
+            <p class="titulo">Deco<span>life</span></p>
+            <ul id="toggle">
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Categorias">Categorias</a></li>
+                <li><a href="#Vendidos">Mas vendidos</a></li>
+                <li><a href="#Nosotros">Nosotros</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+            <span class="btn-nav" onclick="showmenu()">
+                <i class="fa fa-bars"></i>
+            </span>
+        </nav>
+    </header>
+
+    <main>
+             <!-- Sección Inicio -->
+        <section id="Inicio" class="s1">
+            <div class="titulo-ini">
+                <h1><span>INNOVACIÓN, </span><span>DISEÑO, </span><span>FUNCIÓN</span></h1>
+                <p class="frase">Con la calidad y la dedicación que tu proyecto necesita.</p>
+            </div>
+        </section>
+              <!-- Sección Categorías -->
+        <section id="Categorias" class="s2">
+            <div class="cat">
+                <div class="titulo-cat">
+                    <h1>Oficina</h1>
+                </div>
+                <figure>
+                    <img src="images/Categorías/Cat-Oficina.png" alt="">
+                </figure>
+                <div class="desc-cat">
+                    <p>Desde juegos de sillas hasta mesas arregladas a medida y muebles de 5 
+                        espacios para su comodidad en el ámbito de trabajo 
+                    </p><br>
+                    <ul>
+                        <h1>Oficina Artículos:</h1>
+                        <li>Sillas Ergonómicas</li>
+                        <li>Bibliotecas</li>
+                        <li>Armarios</li>
+                        <li>Escritorios</li>
+                        <li><b>Cantidad</b> de Prod: 3480</li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="cat">
+                <div class="titulo-cat">
+                    <!-- Uso de la API en el titulo -->
+                    <h1 id="living">Living Room</h1>
+                </div>
+                <figure>
+                    <img src="images/Categorías/Cat-Living.png" alt="">
+                </figure>
+                <div class="desc-cat">
+                    <p>
+                        Ofrecemos una ámplia variedad de muebles modernos hechos a la medida para su comfort
+                    </p><br>
+                    <ul>
+                        <h1>Living Room Artículos:</h1>
+                        <!-- Uso de la API en los primeros 2 li -->
+                        <li id="living-1"></li>
+                        <li id="living-2"></li>
+                        <li>Rack Modulares Para Tv</li>
+                        <li>Estanterías</li>
+                        <!-- Uso de la API para mostrar el número de cantidad -->
+                        <li id="cant-living"></li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="cat">
+                <div class="titulo-cat">
+                    <h1>Cocina</h1>
+                </div>
+                <figure>
+                    <img src="images/Categorías/Cat-Cocina.png" alt="">
+                </figure>
+                <div class="desc-cat">
+                    <p>
+                        Tenemos varios muebles también para su cocina, para que pueda tener un mejor espacio, mejor orden y mas eficiencia en el área
+                    </p><br>
+                    <ul>
+                        <h1>Cocina Artículos:</h1>
+                        <li>Despenseros</li>
+                        <li>Bajo Mesadas</li>
+                        <li>Alacenas</li>
+                        <li>Rack para Microondas</li>
+                        <li><b>Cantidad</b> de Prod: 1390</li>
+                    </ul>
+                </div> 
+            </div>
+        </section>
+                <!-- Sección Mas Vendidos -->
+        <section id="Vendidos" class="s3">
+            <h1>Destacados</h1>
+            <div class="grid-container">
+                <div id="especial" class="grid-items">
+                    <figure>
+                        <img class="imagen-prod" src="images/productos/prod-1.jpg" alt="">
+                    </figure>
+                    <div class="info-prod">
+                        <p class="nombre-prod"><b> Rack Mesa Tv Led Melamina Moderno</b></p>
+                        <p class="precio"><button>$18.000</button></p>
+                        <p>Ancho x Profundidad x Altura: 120 cm x 35 cm x 62 cm <br>
+                            Cantidad de puertas: 1 <br>
+                            Cantidad de estantes: 1</p>
+                    </div>
+                </div>
+                <div class="grid-items">
+                    <figure>
+                        <img class="imagen-prod" src="images/productos/prod-2.jpg" alt="">
+                    </figure>
+                    <div class="info-prod">
+                        <p class="nombre-prod"><b>Placard Carpintería Rivadavia Delta</b></p>
+                        <p class="precio"><button>$38.000</button></p>
+                    </div>
+                   
+                </div>
+                <div class="grid-items">
+                    <figure>
+                        <img class="imagen-prod" src="images/productos/prod-3.png" alt="">
+                    </figure>
+                    <div class="info-prod">
+                        <p class="nombre-prod"><b>Silla Eames De Comedor Living</b></p>
+                        <p class="precio"><button>$10.800</button></p>
+                    </div>
+                    
+                </div>
+                <div class="grid-items">
+                    <figure>
+                        <img class="imagen-prod" src="images/productos/prod-4.png" alt="">
+                    </figure>
+                    <div class="info-prod">
+                        <p class="nombre-prod"><b>Mesa De Luz Flotante Moderna</b></p>
+                        <p class="precio"><button>$12.390</button></p>
+                    </div>
+                   
+                </div>
+                <div class="grid-items">
+                    <figure>
+                        <img class="imagen-prod" src="images/productos/prod-5.png" alt="">
+                    </figure>
+                    <div class="info-prod">
+                        <p class="nombre-prod"><b>Mesa De Luz 1 Cajon Melamina c/Estantes</b></p>
+                        <p class="precio"><button>$9.700</button></p>
+                    </div>
+                   
+                </div>
+                <div id="especial-2" class="grid-items">
+                    <figure>
+                        <img class="imagen-prod" src="images/productos/prod-6.jpg" alt="">
+                    </figure>
+                    <div class="info-prod">
+                        <p class="nombre-prod"><b>Mueble Mesa Tv Modular Rack Nordico</b></p>
+                        <p class="precio"><button>$22.500</button></p>
+                        <p>Ancho x Profundidad x Altura: 180 cm x 35 cm x 46 cm <br>
+                            Cantidad de puertas: 3 <br>
+                            Cantidad de estantes: 1</p>
+                    </div>
+                    
+                </div>
+                <div class="grid-items">
+                    <figure>
+                        <img class="imagen-prod" src="images/productos/prod-7.png" alt="">
+                    </figure>
+                    <div class="info-prod">
+                        <p class="nombre-prod"><b>Escritorio PC Office Melamina Forma L</b></p>
+                        <p class="precio"><button>$30.600</button></p>
+                    </div>
+                   
+                </div>
+                <div class="grid-items">
+                    <figure>
+                        <img class="imagen-prod" src="images/productos/prod-8.png" alt="">
+                    </figure>
+                    <div class="info-prod">
+                        <p class="nombre-prod"><b>Alacena 1.60 M 4 Puertas Estantes</b></p>
+                        <p class="precio"><button>$11.000</button></p>
+                    </div>
+                   
+                </div>
+                <div class="grid-items">
+                    <figure>
+                        <img class="imagen-prod" src="images/productos/prod-9.png" alt="">
+                    </figure>
+                    <div class="info-prod">
+                        <p class="nombre-prod"><b>Cómoda Moderna 4 Cajones</b></p>
+                        <p class="precio"><button>$37.200</button></p>
+                    </div>
+                  
+                </div>
+                <div class="grid-items">
+                    <figure>
+                        <img class="imagen-prod" src="images/productos/prod-10.png" alt="">
+                    </figure>
+                    <div class="info-prod">
+                        <p class="nombre-prod"><b>Combo Estantes Flotantes Multiusos Moderno</b></p>
+                        <p class="precio"><button>$4.400</button></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- Sección Nosotros -->
+        <section id="Nosotros" class="s4">
+            <h1 class="titulo-nos">Nosotros</h1>
+            <div id="mi-slider">
+                <ul class="slider">
+                    <li id="slide1">
+                        <h1>Conocé a nuestro equipo</h1>
+                        <p>Todos ellos son expertos con una excelente interpretación del buen diseño: productos elegantes y bien concebidos que reflejan nuestros tiempos y mejoran nuestras vidas.
+                        </p>
+                        <img src="images/equipo.jpg" alt="equipo">
+                    </li>
+                    <li id="slide2">
+                        <h1>Andrea Dumas</h1>
+                        <p>Andrea posee una pasión por el uso de nuevas tecnologías para crear diseños atractivos que aportan un gran valor para el usuario.</p>
+                        <img class="photos" src="images/team-image2.jpg" alt="foto de Andrea"/>
+                    </li>
+                    <li id="slide3">
+                        <h1>Francisco Guzman</h1>
+                        <p>Francisco se atreve a usar detalles divertidos y distintivos que hacen que sus diseños se destaquen sin comprometer su confort y función.</p>
+                        <img src="images/team-image3.jpg "alt="foto de Francisco">
+                    </li>
+                    <li id="slide4">
+                        <h1>Malena Deep</h1>
+                        <p>Malena tiene un gran talento para trabajar con las dimensiones y colores adecuados, asegurando que el resultado final será siempre hermoso.
+                        </p>
+                        <img src="images/team-image4.jpg"foto de Marcus">
+                    </li>
+                </ul>
+                <ul class="menu">
+                <li>
+                    <a href="#slide1"><b>1</b></a>
+                </li>
+                <li>
+                    <a href="#slide2"><b>2</b></a>
+                </li>
+                <li>
+                    <a href="#slide3"><b>3</b></a>
+                </li>
+                <li>
+                    <a href="#slide4"><b>4</b></a>
+                </li>
+                </ul>
+            </div>     
+        </section>
+                <!-- Sección Contacto -->
+        <section id="Contacto" class="s5">
+            <div id="contact-form">
+                <form id="form" action="" method="post">
+                    <div class="titulo-cont">
+                         <h1>Contacte con Nosotros</h1>
+                    </div>
+                    <div class="box-1">
+                         <input type="text" class="form-control" placeholder="Nombre y Apellido" name id="name"><span class="barra"></span>
+                    </div>
+                    <div class="box-1">
+                         <input type="email" class="form-control" placeholder="Dirección E-mail" name id="email"><span class="barra"></span>
+                    </div>
+                    <div class="box-2">
+                        <input type="submit" class="form-control button" name id="btn" value="Enviar Mensaje">
+                   </div>
+                    <div class="box-3">
+                         <textarea oninput="auto_grow(this)" class="form-control" rows="16" cols="64" placeholder="Escriba su Mensaje - Max 500 Ch" name id="mensaje"></textarea>
+                    </div>
+               </form>
+               <p id="alertas"></p>
+            </div>
+            <aside class="sidebar">
+                <h1>Lo esperamos en nuestro local</h1><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210359.2247981753!2d-58.949204425453544!3d-34.53170164073319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5831d1ef667%3A0xc94cd0816108c0b1!2sEl%20Muelle!5e0!3m2!1ses-419!2sar!4v1660330433486!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="pagos">
+                    <h1>Formas de Pago</h1><br>
+                    <img src="images/formas-pago-2.png"></img>
+                </div>
+            </aside>
+        </section>
+    </main>
+            <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="items_footer">
+                <p>Formas de Pago</p>
+                <ul class="icons-footer">
+                    <li><i class="fa-brands fa-cc-visa"></i></li>
+                    <li><i class="fa-brands fa-cc-mastercard"></i></li>
+                    <li><i class="fa-brands fa-cc-amex"></i></li>
+                    <li><i class="fa-brands fa-cc-diners-club"></i></li>
+                </ul>
+                <p>Consultá por nuestras promociones bancarias.</p>
+            </div>
+            <div class="items_footer">
+                <p>Visitanos</p>  
+                <p><i class="fa-solid fa-location-dot"></i> Av. de los Lagos 1670 - Buenos Aires</p>
+                <p>Horarios: 09 hs a 19 hs</p>
+                <p><i class="fa-solid fa-phone"></i> (011)15-4871-1000</p>
+            </div>
+            <div class="items_footer"> 
+                <p>Seguinos</p>
+                <ul class="icons-footer">
+                    <li> <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li> <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li> <a href="https://ar.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li> <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a></li></li>
+                </ul>
+            <p>Copyright © 2022 - Decolife</p>  
+            </div>
+        </div>  
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a3f608588f.js" crossorigin="anonymous"></script>
+</body>
+</html>

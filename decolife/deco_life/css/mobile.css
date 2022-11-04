@@ -1,0 +1,108 @@
+html{
+    scroll-padding: 60px;
+}
+/* Navbar */
+
+.btn-nav{
+    display: inline-flex;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+}
+.nav > ul{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 60px);
+    background: linear-gradient(white,grey);
+    top: -100%;
+    text-align: center;
+    transition: all .4s;
+    flex-direction: column;
+}
+.nav > ul > li{
+    margin-top: 30px;
+    line-height: 30px;
+}
+.nav > ul.show{
+    top: 60px;
+    height: 450px;
+    box-shadow: 0px 0px 1rem 0px rgb(0, 0, 0) inset;
+}
+li > a{
+    font-size: 2.5rem;
+}
+@media screen and (max-width: 650px) and (orientation: landscape){
+    .nav > ul > li{
+        margin-top: 5px;
+    }
+    .nav > ul{
+        overflow: scroll;
+        height: calc(100% - 60px);
+    }  
+}
+
+/* Fin Navbar */
+
+/* Inicio */ 
+.titulo-ini span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frase{
+    font-size: 1.5rem;
+}
+
+/* Fin Inicio */
+
+/* Mas Vendidos */
+
+.grid-items{
+    flex-grow: 1;
+    width: 90%;
+    height: 10%;
+}
+button{
+    margin-top: 0.5rem;
+    width: 12rem;
+    height: 5rem;
+}
+#especial figure,
+#especial-2 figure,
+.grid-items figure{
+    height: 55%;
+}
+
+
+.grid-items > figure{
+    margin: 1rem;
+}
+.info-prod > p{
+    margin: 1rem 0 1rem 0;
+    font-size: 4vw;
+}
+#especial .info-prod > p,
+#especial-2 .info-prod > p{
+    font-size: 4vw;
+    margin: 0;
+}
+#especial .info-prod > p:nth-child(3),
+#especial-2 .info-prod > p:nth-child(3){
+    font-size: 3vw;
+}
+button{
+    height: 6vh;
+    width: 30vw;
+    font-size: 3vw;
+}
+
+/* Fin Vendidos */
+
+/* Contacto */
+
+textarea{
+    max-height: 130px;
+}
+
+/* Fin Contacto */

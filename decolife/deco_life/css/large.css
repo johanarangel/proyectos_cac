@@ -1,0 +1,53 @@
+/* Vendidos */
+
+.s3{
+    height: auto;
+}
+.grid-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 0rem;
+}
+.grid-items{
+    width: 31%;
+    height: 22%;
+}
+button{
+    margin-top: 0.5rem;
+    width: 8rem;
+    height: 3rem;
+}
+#especial figure,
+#especial-2 figure,
+.grid-items figure{
+    height: 50%;
+}
+
+.info-prod > p,
+#especial .info-prod > p,
+#especial-2 .info-prod > p{
+    font-size: 1.6rem;
+}
+.grid-items > figure{
+    margin: 1rem;
+}
+#especial > .info-prod > p, 
+#especial-2 > .info-prod > p{
+    padding: 0.5rem 0 0 0;
+}
+#especial .imagen-prod,
+#especial-2 .imagen-prod{
+    margin: 0.5rem;
+    width: calc(100% - 0.5rem) ;
+    height: calc(100% - 0.5rem);
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 1rem black;
+}
+#especial .info-prod > p:nth-child(3), 
+#especial-2 .info-prod > p:nth-child(3){
+    visibility: hidden;
+}
+
+/* Fin Vendidos */
