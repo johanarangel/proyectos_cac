@@ -1,0 +1,651 @@
+:root {
+    --font-family: 'Silkscreen', cursive;;
+    --normal-font: 200;
+    --font-normal: medium;
+    --font-big: large;
+    --bold-font: 700;
+    --bolder-font: 1400;
+    --bg-color: #facae6;
+    --primary-color:#a76f84;
+    --secondary-color:#f1aaec;
+    --primary-shadow:#95664e;
+    --secondary-shadow:#dab58c;
+    --accent-color: #c13c1a;
+    --shadow-color: rgba(78, 4, 56, 0.425);
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 2rem;
+    --top-margin: 0.5rem;
+    --line-height: 1.5rem;
+    --transition: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--bg-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: var(--bold-font);
+}
+
+a:hover {
+    color: var(--primary-shadow);
+}
+
+body {
+    font-family: var(--font-family);
+    min-height: 100vh;
+}
+
+.logo{
+    background: none;
+    width: 7.5rem;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 1.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 0rem 0rem 1rem 1rem;
+    box-shadow: 0 3px 3px var(--shadow-color);
+}
+
+nav a {
+    color: var(--primary-color);
+    font-size: var(--font-normal);
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+}
+
+nav a:hover{
+    color: var(--accent-color);
+    font-weight: var(--bolder-font);
+}
+
+nav ul {
+    background: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li {
+    background: none;
+    font-weight: var(--bold-font);
+}
+
+.menu-hamburguesa {
+    color: var(--accent-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-hamburguesa ion-icon {
+    border: 1px solid var(--accent-color);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+    max-width: 75rem;
+    margin: 2rem 7rem;
+}
+
+.hero img {
+    height: 31rem;
+    width: 27rem;
+}
+
+.bio {
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0px 2px 15px 2px var(--shadow-color);
+}
+
+.bio h2 {
+    margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+    line-height: var(--line-height);
+    padding: 0.5rem 0;
+}
+
+.mas-de-mi {
+    max-width: 50rem;
+    padding: 1rem 3rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+    box-shadow: 0px 2px 15px 2px var(--shadow-color);
+}
+
+.mas-de-mi h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: left;
+}
+
+.mas-de-mi p {
+    line-height: var(--line-height);
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.juegos {
+    position: relative;
+    margin-left: auto;
+    max-width: 50rem;
+    padding: 1rem 3rem;
+    border-radius: 1rem 0rem 0rem 1rem;
+    box-shadow: 0px 2px 15px 2px var(--shadow-color);
+}
+
+.juegos h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: right;
+}
+
+.juegos ul {
+    margin-top: var(--top-margin);
+    margin-left: auto;
+    line-height: var(--line-height);
+    padding: 0.5rem;
+    max-width: 10rem;
+    text-align: right;
+}
+
+.programas {
+    position: relative;
+    max-width: 100vw;
+    padding: 1rem 3rem;
+    box-shadow: 0px 2px 15px 2px var(--shadow-color);
+}
+
+.programas h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+}
+
+.prog-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+} 
+
+.icon {
+    width: 7rem;
+}
+
+footer {
+    bottom: 0;
+    max-width: 90vw;
+    margin: auto;
+    padding: 2rem 1rem;
+    border-radius: 3rem 3rem 0rem 0rem;
+    box-shadow: 10px 2px 20px 2px var(--shadow-color);
+}
+
+.icon2 {
+    width: 5rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.tos-intro {
+    position: relative;
+    margin: auto;
+    padding: 1rem 3rem;
+}
+
+.tos-intro h2 {
+    margin-bottom: var(--bottom-margin-2);
+    text-align: center;
+}
+
+.tos-intro p {
+    line-height: var(--line-height);
+    text-align: center;
+}
+
+.tos {
+    position: relative;
+    margin: auto;
+    padding: 1rem 3rem;
+    box-shadow: 0px 2px 15px 2px var(--shadow-color);
+}
+
+.tos h2 {
+    margin-bottom: var(--bottom-margin-2);
+}
+
+.tos ul li {
+    line-height: var(--line-height);
+}
+
+.contacto {
+    margin-top: 2rem;
+}
+
+.contacto h2 {
+    text-align: center;
+    line-height: var(--line-height);
+}
+
+.formulario-contacto-contenedor {
+    position: relative;
+    margin: auto;
+    max-width: 50rem;
+    padding: 1rem 3rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0px 2px 15px 2px var(--shadow-color);
+}
+
+.formulario-contacto-contenedor textarea {
+    min-height: 1rem;
+    background: none;
+    color: var(--accent-color);
+}
+
+.formulario-contacto-contenedor label {
+    background: none;
+    color: var(--primary-color);
+    padding: 0.25rem;
+}
+
+.control-formulario {
+    max-width: 50rem;
+}
+
+.control-formulario .input-field {
+    width: 100%;
+    padding: 0.5rem 0rem 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.15rem solid var(--accent-color);
+    outline: none;
+}
+
+.input-field::placeholder {
+    padding: 0.5rem;
+    color: var(--primary-color);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0.1rem;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border-radius: 0.25rem;
+    border: none;
+    transition: var(--transition);
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+.gracias {
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    padding: 1rem 3rem;
+    box-shadow: 2px 2px 15px 2px var(--shadow-color);
+}
+
+.gracias p {
+    text-align: center;
+}
+
+.dogBtn {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+    padding: 0.75rem;
+    margin: auto;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border-radius: 0.25rem;
+    border: none;
+    transition: var(--transition);
+}
+
+.dogBtn:hover {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+#imgDog img {
+    display: flex;
+    overflow: scroll;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    margin: auto;
+    max-width: 50%;
+}
+
+.commisIntro {
+    position: relative;
+    margin: auto;
+    padding: 2rem 2rem;
+}
+
+.commisIntro h2 {
+    text-align: center;
+}
+
+.commisIntro p {
+    text-align: center;
+}
+
+.commisBar {
+    display: flex;
+    width: 85%;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 5rem;
+    padding: 2rem;
+    text-align: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    border: 0.3rem solid var(--accent-color);
+    border-radius: 0.5rem;
+    box-shadow: 10px 2px 20px 2px var(--shadow-color);
+    background: var(--primary-color);
+}
+
+.commisBar div {
+    background: none;
+    line-height: var(--line-height);
+}
+
+.commisBar div p {
+    background: none;
+    line-height: var(--line-height);
+    font-size: 200%;
+}
+
+.commisImg {
+    width: 20vw;
+    background: none;
+}
+
+.commisImg2 {
+    width: 30vw;
+    background: none;
+}
+
+.commisBar2 {
+    display: flex;
+    width: 85%;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 5rem;
+    padding: 2rem;
+    text-align: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    border: 0.3rem solid var(--accent-color);
+    border-radius: 0.5rem;
+    box-shadow: 10px 2px 20px 2px var(--shadow-color);
+    background: var(--primary-color);
+}
+
+.commisBar2 div {
+    background: none;
+    line-height: var(--line-height);
+}
+
+.commisBar2 div p {
+    background: none;
+    line-height: var(--line-height);
+    font-size: 125%;
+}
+
+.commisPreview {
+    width: 25vw;
+    background: none;
+}
+
+.commisBar3 {
+    display: flex;
+    width: 85%;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 5rem;
+    padding: 2rem;
+    text-align: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    border: 0.3rem solid var(--accent-color);
+    border-radius: 0.5rem;
+    box-shadow: 10px 2px 20px 2px var(--shadow-color);
+    background: var(--primary-color);
+}
+
+.commisBar3 div {
+    background: none;
+    line-height: var(--line-height);
+}
+
+.commisBar3 div p {
+    background: none;
+    line-height: var(--line-height);
+    font-size: 200%;
+}
+
+.commisToon{
+    width: 40vw;
+    background: none;
+}
+
+.commisOutro {
+    position: relative;
+    margin: auto;
+    padding: 2rem 2rem;
+}
+
+.commisOutro h2 {
+    text-align: center;
+}
+
+.commisOutro p {
+    text-align: center;
+}
+
+.worksIntro {
+    position: relative;
+    margin: auto;
+    padding: 2rem 2rem;
+}
+
+.worksIntro h2 {
+    text-align: center;
+    margin-bottom: var(--bottom-margin);
+}
+
+.worksIntro p {
+    text-align: center;
+    line-height: var(--line-height);
+}
+
+.works {
+    display: flex;
+    width: 85%;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 5rem;
+    padding: 2rem;
+    text-align: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    border: 0.3rem solid var(--accent-color);
+    border-radius: 0.5rem;
+    box-shadow: 10px 2px 20px 2px var(--shadow-color);
+    background: var(--primary-color);
+}
+
+.works div {
+    background: none;
+    line-height: var(--line-height);
+}
+
+.imgWorks1 {
+    width: 30vw;
+    background: none;
+}
+
+.imgWorks2 {
+    width: 25vw;
+    background: none;
+}
+
+.imgWorks3 {
+    width: 15vw;
+    background: none;
+}
+
+.img-wip {
+    width: 25vw;
+    background: none;
+}
+
+
+@media screen and (max-width: 720px) {
+    nav {
+        padding: 1.5rem 1rem;
+    }
+    
+    nav ul {
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+    
+    nav ul li {
+        margin: 8px;
+    }
+    
+    .menu-hamburguesa {
+        display: block;
+    }
+    
+    nav ul.show {
+        transform: translateX(0);
+    }
+    
+    .hero {
+        margin-top: 2rem;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .hero img {
+        width: 50vw;
+        height: 50vh;
+    }
+    
+    .bio {
+        margin-top: -7rem;
+        width: 20.5rem;
+    }
+    
+    
+    .icon{
+        width: 50%;
+    }
+    
+    .icon2 {
+        width: 2.5rem;
+    }
+    
+    .imgWorks1{
+        width: 100%;
+    }
+    
+    .imgWorks2{
+        width: 40vw;
+        background: none;
+    }
+    
+    .commisImg {
+        width: 100%;
+    }
+    
+    .commisImg2 {
+        width: 100%;
+    }
+    
+    .commisPreview {
+        width: 100%;
+    }
+    
+    .commisToon{
+        width: 100%;
+    }
+    
+    .img-wip {
+        width: 100%;
+    }
+    
+    #imgDog img {
+        max-width: 100%;
+    }
+    
+}
+
+
+
