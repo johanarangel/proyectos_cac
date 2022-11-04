@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+/* FONTS */
+    @font-face {
+        font-family: "PrettyMeowRegular";
+        src: url("../fonts/FONT_PrettyMeowRegular.ttf");
+    }
+    
+    @font-face {
+        font-family: "Quicksand";
+        src: url("../fonts/FONT_Quicksand.ttf");
+    }
+    
+    @font-face {
+        font-family: "KawaiiBubble-Regular";
+        src: url("../fonts/FONT_KawaiiBubble-Regular.ttf");
+    }
+    
+    @font-face {
+        font-family: "Bree-Serif";
+        src: url("../fonts/FONT_BreeSerif.ttf");
+    }
+/* END FONTS */
+
+/* TODAS LAS OPCIONES DE ATRIBUTOS (MENOS LOS TITULOS) VAN A TENER LA MISMA LETRA */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-family: "Quicksand";
+  ;
+  vertical-align: baseline;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bree Serif', serif;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    font-size: revert;
+    font-family: Bree-Serif;
+    vertical-align: baseline;
+  }
+
+/*HEADER*/
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    
+        /* HEADER ANIMATION scr: https://developer.mozilla.org/en-US/docs/Web/CSS/animation */
+        background-color: #ff9a87;
+        animation: 60s linear 0s infinite alternate animating-multiple-properties;
+        margin: 0%;
+        /* END HEADER ANIMATION */
+    }
+    
+    /* Key HEADER */
+    /* it is possible to animate multiple properties in a single animation */
+    @keyframes animating-multiple-properties {
+        from {
+        background-color: #ffffbf;
+        }
+        to {
+        transform: translateY(0);
+        background-color: #ff9a87;
+        /* unset properties i.e. 'filter' will revert to default values */
+        }
+    }
+    /* END Key HEADER */
+/*END HEADER*/
+
+/* LOGO ANIMATION */
+    .logo_gatito {
+        border-radius: 50%;
+        /* explicacion de animacion: https://linuxhint.com/rotate-animation-css/ */
+        animation: 60s linear 0s infinite alternate rotation;
+        width: 100%;
+        max-width: 450px;
+        min-width: 20px;
+        height: auto;
+    }
+    @keyframes rotation {
+        from {
+        transform: rotate(-90deg);
+        }
+        to {
+        transform: rotate(90deg);
+        }
+    }
+/* END LOGO ANIMATION*/
+
+/* FORMATO DE LA IMAGEN PATITAS */
+
+.patitas {
+    width:100%;
+    max-width: 450px;
+    min-width: 20px;
+    height: auto;
+}
+
+
+/* END FORMATO DE LA IMAGEN PATITAS */
+
+
+
+.titulo{
+    font-family: "KawaiiBubble-Regular";
+    min-width: 100px;
+   /* font-size: 60px; */
+   justify-content: center;
+
+}
+
+
+
+/* MENU */
+    .menu-conteiner{
+        background-color: #ff00a4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 85px;
+        padding: 5px 10%;
+        font-family: "Bree-Serif";
+        font-size: 20px;
+    }
+
+    .menu-conteiner .nav-links{
+        list-style: none;
+    }
+
+    .menu-conteiner .nav-links li{
+        display: inline-block;
+        padding: 0 20px;
+    }
+
+    .menu-conteiner .nav-links li:hover,
+    .menu-conteiner .overlay a:hover{
+        transform: scale(1.1);
+    }
+
+    .menu-conteiner .nav-links a{
+        font-size: 700;
+        color: #ffe8a8;
+    }
+
+    .menu-conteiner .nav-links li a:hover{
+        color: #ff9a87;
+    }
+
+    .menu-conteiner .boton button,
+    .menu-conteiner .menu button{
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        padding: 9px 25px;
+        background-color:#ff00a4;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+
+    .menu-conteiner .boton button:hover,
+    .menu-conteiner .menu button:hover{
+        background-color:#ffffbf;
+        color:#ff2f82;
+        font-weight: bold;
+        transform: scale(1.1);
+    }
+
+    .menu-conteiner a{
+        text-decoration: none;
+    }
+
+    .menu-conteiner .overlay{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: #ff00a4;
+        overflow: hidden;
+        transition: all 0.3s ease 0s;
+    }
+
+    .menu-conteiner .overlay .overlay-content{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-conteiner .overlay a{
+        padding: 15px;
+        font-size: 36px;
+        display: block;
+        transition: all 0.3s ease 0s;
+        font-weight: 700;
+        color: #ffffbf;
+    }
+
+    .menu-conteiner .overlay a:hover,
+    .menu-conteiner .overlay a:focus{
+        color: #ff9a87;
+    }
+
+    .menu-conteiner .overlay .close{
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 65px;
+    }
+/* END MENU */
+
+/* HOME CONTENT */
+    .contenido {
+        /* explicacion de grid: https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout */
+        grid-gap: 5px;
+        grid-auto-rows: minmax(100px, auto);
+        justify-content: space-evenly;
+        align-items: stretch;
+        margin: 0px;
+        padding: 0px;
+        background-color: #ffffbf;
+        justify-items: stretch;
+        align-content: stretch;
+    }
+    .contenido div {
+        display: grid;
+        width: -webkit-fill-available;
+        padding: 10px;
+        margin-bottom: 3px;
+        min-height: 250px;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items: stretch;
+        align-content: stretch;
+        border-radius: 1%;
+    }
+    
+    /* pintado alternado: https://developer.mozilla.org/es/docs/Web/CSS/:nth-child */
+    .contenido div:nth-child(even) {
+        background-color: #ffe8a8;
+    }
+    
+    .contenido div:nth-child(odd) {
+        background-color: #ff9a87;
+    }
+
+    #grid_1{
+        text-justify: distribute;
+    }
+
+    /* CARDS */
+
+        .card {
+            outline: 1px solid rgba(255, 255, 255, 0.5);
+            outline-offset: -8px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-image {
+            position: absolute;
+            inset: 0;
+            justify-self: stretch;
+            width: 100%;
+            height: 100%;
+            min-height: 250px;
+            object-fit: cover;
+            opacity: 0.7;
+            transition: transform 0.75s;
+        }
+        
+        .card:hover .card-image {
+            transform: scale(1.15);
+            opacity: 0.9;
+        }
+        
+        .card-title {
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+            font-size: 20px;
+            text-shadow: o o 1px rgba(0, 0, 0, 0.5);
+            color: black;
+        }
+    /* END CARDS */
+
+/* END HOME CONTENT */
+
+/*ABOUT CONTENT*/
+    .tarjetas_quienes_somos {
+        /* formato para la pagina de quienes somos */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        margin: 0px;
+        padding: 0px;
+        background-color: #ffffbf;
+        justify-items: center;
+        align-content: stretch;
+    }
+    .tarjetas_quienes_somos div {
+        flex: 2;
+        padding: 25px;
+        margin: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items: center;
+        align-content: stretch;
+        background-color: #ffffbf;
+        min-width: 250px;
+    }
+/*END ABOUT CONTENT*/
+
+/*KITTENS CONTENT*/
+    .home_kittens {
+        display: flex;
+        background-color: #ffffbf;
+        flex-wrap: wrap;
+    }
+    
+    .home_kittens_flex {
+        flex: 1;
+        min-width: 250px;
+        max-width: 650px;
+    }
+    
+    .home_kittens_flex:first-child {
+        flex: 2;
+        padding: 25px;
+        margin: 20px;
+        background-color: #ffe8a8;
+        border-radius: 2%;
+        margin-bottom: 10px;
+    }
+    
+    .home_kittens_flex div {
+        padding: 25px;
+        margin: 20px;
+        background-color: #ffe8a8;
+        border-radius: 2%;
+    }
+    
+    #img_kittens_container {
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .img_kittens {
+        border-radius: 40%;
+        background-color: #ff2f82;
+        max-width: 50%;
+        margin: 1px;
+    }  
+/*END KITTENS CONTENT*/
+
+/*GATITOS DEL MUNDO/API CONTENT*/
+    .api_conteiner {
+        display: flex;
+        flex-direction: row;
+        background-color: #ffffbf;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    /* .api_datos_flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        min-width: 250px;
+        max-width: 650px;
+        padding: 25px;
+        margin: 20px;
+        background-color: #ffe8a8;
+        border-radius: 12px;
+        margin-bottom: 10px;
+        color: black;
+        width: 100%;
+        min-width: 250px;
+        max-width: 650px;
+        border-radius: 12px;
+    } */
+    
+    /* .api_datos_flex:first-child {
+        flex: 2;
+        padding: 25px;
+        margin: 20px;
+        background-color: #ffe8a8;
+        border-radius: 12px;
+        margin-bottom: 10px;
+        color: black;
+        width: 100%;
+        min-width: 250px;
+        max-width: 650px;
+        border-radius: 12px;
+    } */
+    
+    /* .api_datos_flex div {
+        padding: 25px;
+        margin: 20px;
+        background-color: #ffe8a8;
+        background-color: #ff9a87;
+        color: black;
+        width: 100%;
+        min-width: 250px;
+        max-width: 650px;
+        border-radius: 12px;
+    } */
+    
+    .content-select {
+        min-width: 250px;
+        max-width: 650px;
+        position: absolute;
+    }
+    
+    /*okey esta parte es la del selector de gatitos :D*/
+    #breed_selector {
+        width: 90%;
+        display: inline-block;
+        min-width: 250px;
+        max-width: 650px;
+        cursor: pointer;
+        padding: 7px 10px;
+        height: 42px;
+        outline: 0;
+        border: 0;
+        margin-top: 20px;
+    
+        background: #ff2f82;
+        color: aliceblue;
+        font-size: 1em;
+        border: 2px;
+        border-radius: 12px;
+        position: relative;
+        transition: all 0.25s ease;
+    } 
+    #breed_selector:hover {
+        background-color: #ff9a87;
+    } 
+    #breed_selector option{
+        background-color:#ffe8a8;
+        color:black;
+    }
+    
+    /*este es el link*/
+    #wiki_link {
+        background-color:rgba(255, 154, 135, 0.2);
+        color: black;
+        min-width: 250px;
+        max-width: 650px;
+        margin: 50px;
+        padding: 20px;
+        border-radius: 12px;
+    } 
+    
+    /*esta es la descripción*/
+    #breed_json {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 12px;
+        
+    } 
+    
+    #breed_image {
+        width: 100%; /*esta es la imagen*/
+        max-width: 500px;
+        margin: 20px;
+        border-radius: 12px;
+    }  
+/* END GATITOS/API CONTENT*/
+
+/*FOOTER*/
+    .footer {
+        background-image: url(../img/imagenes_PATITAS200PX.jpeg);
+        width: 100%;
+        background-repeat: repeat;
+        padding: 20px;
+    }
+    .footer .btn {
+        background-color: #ff9a87;
+        border-color: #ff9a87;
+        color: #000;
+        font-family: "Bree-Serif";
+        transition: all 0.3s ease 0s;
+    }
+    .footer .btn:hover{
+        background-color: #ffe8a8;
+        border-color: #ffe8a8;
+        color: #000;
+        transform: scale(1.1);
+    }
+/*END FOOTER*/
+
+/* pagina curisidades */
+
+.contenido_curiosidades{
+    background-color:#ffe8a8;
+    padding: 10px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-content: stretch;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.contenido_curiosidades div{
+
+background-color:#ff9a87;
+padding: 20px;
+margin: 20px;
+min-width: 200px;
+max-width: 400px;
+border-radius: 5%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-content: center;
+align-items: center;
+animation: movimiento 2.5s linear infinite;
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.curiosidades_imagenes {
+    max-width: 100%;
+    min-width: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+}
+
+/* END PAGINA CURIOSIDADES */

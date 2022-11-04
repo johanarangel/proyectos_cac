@@ -1,0 +1,349 @@
+@media (max-width: 768px) {
+    .menu-conteiner .nav-links{
+        display: none;
+    }
+ 
+    .menu-conteiner .overlay a{
+        font-size: 20px;
+    }
+
+    .menu-conteiner .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    .menu-conteiner .boton{
+        display: none;
+    }
+
+    .menu-conteiner .menu{
+        display: inherit;
+    }
+/*KITTENS CONTENT*/
+    .home_kittens {
+        display:inline-block;
+        background-color: #ffffbf;
+    }
+    .home_kittens_flex {
+        flex: 1;
+        min-width: 250px;
+        max-width: 90%;
+    }
+    .home_kittens_flex iframe{
+        height: 500px;
+    } */
+/*END KITTENS CONTENT*/
+
+/*HOME CONTENT*/
+        .contenido{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        }
+        /*titulo*/
+        #grid_1 {
+            grid-column: 1 / 4;
+            grid-row: 1;
+        }
+        /*a rayas*/
+        #grid_2 {
+            grid-row: 2/4;
+        }
+        /*naranjitas*/
+        #grid_3 {
+            grid-row: 4/6;
+        }
+        /*grises*/
+        #grid_4 {
+            grid-row: 6/8;
+        }
+        /*negros*/
+        #grid_5 {
+            grid-row: 8/10;
+        }
+        /*persa*/
+        #grid_6 {
+            grid-row: 10/12;
+        }
+        /*kohana*/
+        #grid_7 {
+            grid-row: 12/14;
+        }
+        /*lykoi*/
+        #grid_8 {
+            grid-row: 14/16;
+        }
+        /*himalayo*/
+        #grid_9 {
+            grid-row: 16/18;
+        }
+        /*ceylon*/
+        #grid_10 {
+            grid-row: 18/20;
+        }
+        /*siames*/
+        #grid_11 {
+            grid-row: 20/22;
+        }
+        /*turco*/
+        #grid_12 {
+            grid-row: 22/24;
+        }
+        /*ashera*/
+        #grid_13 {
+            grid-row: 24/26;
+        }
+        /*caracat*/
+        #grid_14 {
+            grid-row: 26/28;
+        }
+        /*burmilla*/
+        #grid_15 {
+            grid-row: 28/30;
+        }
+        /*montes*/
+        #grid_16 {
+            grid-row: 30/32;
+        }
+        /*bengala*/
+        #grid_17 {
+            grid-row: 32/34;
+        }
+/*END HOME CONTENT*/
+ }
+
+@media (min-width: 768px){
+    .menu-conteiner .nav-links{
+        display: none;
+    }
+
+    .menu-conteiner .overlay a{
+        font-size: 20px;
+    }
+
+    .menu-conteiner .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    .menu-conteiner .boton{
+        display: none;
+    }
+
+    .menu-conteiner .menu{
+        display: inherit;
+    }
+    /*HOME CONTENT*/
+        .contenido{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        /*titulo*/
+        #grid_1 {
+            grid-column: 1 / 4;
+            grid-row: 1;
+        }
+        /*a rayas*/
+        #grid_2 {
+            grid-column: 1;
+            grid-row: 2/5;
+        }
+        /*naranjitas*/
+        #grid_3 {
+            grid-column: 2;
+            grid-row: 2/5;
+        }
+        /*grises*/
+        #grid_4 {
+            grid-column: 1;
+            grid-row: 5/8;
+        }
+        /*negros*/
+        #grid_5 {
+            grid-column: 2;
+            grid-row: 5/8;
+        }
+        /*persa*/
+        #grid_6 {
+            grid-column: 1;
+            grid-row: 8/11;
+        }
+        /*kohana*/
+        #grid_7 {
+            grid-column: 2;
+            grid-row: 8/11;
+        }
+        /*lykoi*/
+        #grid_8 {
+            grid-column: 1;
+            grid-row: 11/14;
+        }
+        /*himalayo*/
+        #grid_9 {
+            grid-column: 2;
+            grid-row: 11/14;
+        }
+        /*ceylon*/
+        #grid_10 {
+            grid-column: 1;
+            grid-row: 14/17;
+        }
+        /*siames*/
+        #grid_11 {
+            grid-column: 2;
+            grid-row: 14/17;
+        }
+        /*turco*/
+        #grid_12 {
+            grid-column: 1;
+            grid-row: 17/20;
+        }
+        /*ashera*/
+        #grid_13 {
+            grid-column: 2;
+            grid-row: 17/20;
+        }
+        /*caracat*/
+        #grid_14 {
+            grid-column: 1;
+            grid-row: 20/23;
+        }
+        /*burmilla*/
+        #grid_15 {
+            grid-column: 2;
+            grid-row: 20/23;
+        }
+        /*montes*/
+        #grid_16 {
+            grid-column: 1;
+            grid-row: 23/26;
+        }
+        /*bengala*/
+        #grid_17 {
+            grid-column: 2;
+            grid-row: 23/26;
+        }
+    /*END HOME CONTENT*/
+}
+
+@media (min-width: 1024px){
+    .menu-conteiner .nav-links{
+        display: flex;
+    }
+
+    .menu-conteiner .boton{
+        display: flex;
+    }
+
+    .menu-conteiner .menu{
+        display: none;
+    }
+/*KITTENS CONTENT*/
+    .home_kittens {
+        display: flex;
+        background-color: #ffffbf;
+        flex-wrap: wrap;
+    }
+    .home_kittens_flex {
+        flex: 1;
+        min-width: 250px;
+        max-width: 90%;
+    }
+/*END KITTENS CONTENT*/
+/*HOME CONTENT*/
+    .contenido{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /*titulo*/
+    #grid_1 {
+        grid-column: 1 / 4;
+        grid-row: 1;
+    }
+    /*a rayas*/
+    #grid_2 {
+        grid-column: 1;
+        grid-row: 2/4;
+    }
+    /*naranjitas*/
+    #grid_3 {
+        grid-column: 2;
+        grid-row: 2/5;
+    }
+    /*grises*/
+    #grid_4 {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    /*negros*/
+    #grid_5 {
+        grid-column: 3;
+        grid-row: 3/6;
+    }
+    /*persa*/
+    #grid_6 {
+        grid-column: 1;
+        grid-row: 4/7;
+    }
+    /*kohana*/
+    #grid_7 {
+        grid-column: 2;
+        grid-row: 5/9;
+    }
+    /*lykoi*/
+    #grid_8 {
+        grid-column: 3;
+        grid-row: 6/8;
+    }
+    /*himalayo*/
+    #grid_9 {
+        grid-column: 1;
+        grid-row: 7;
+    }
+    /*ceylon*/
+    #grid_10 {
+        grid-column: 1;
+        grid-row: 8/10;
+    }
+    /*siames*/
+    #grid_11 {
+        grid-column: 3;
+        grid-row: 8/10;
+    }
+    /*turco*/
+    #grid_12 {
+        grid-column: 2;
+        grid-row: 9/11;
+    }
+    /*ashera*/
+    #grid_13 {
+        grid-column: 1;
+        grid-row: 10/14;
+    }
+    /*caracat*/
+    #grid_14 {
+        grid-column: 2;
+        grid-row: 12/14;
+    }
+    /*burmilla*/
+    #grid_15 {
+        grid-column: 3;
+        grid-row: 10/12;
+    }
+    /*montes*/
+    #grid_16 {
+        grid-column: 2;
+        grid-row: 11;
+    }
+    /*bengala*/
+    #grid_17 {
+        grid-column: 3;
+        grid-row: 12/14;
+    }
+/*END HOME CONTENT*/
+
+/*ABOUT CONTENT*/
+    
+/*END ABOUT CONTENT*/
+}
